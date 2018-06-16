@@ -13,6 +13,12 @@ const data = [
 ];*/
 
 class App extends Component {
+	componentDidMount() {
+		this.props.fetchEventsBy({
+			days: 30
+		});
+	}
+
 	render() {
 		return (
 			<div>
