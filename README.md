@@ -17,6 +17,13 @@ Option 1
 Option 2
 * Google Cloud Platform (Serverless)
 
+Option 3
+* AWS with Serverless Framework
+
+### Ideas
+
+* GraphQL (?)
+
 ### Application folder structure
 
 * src/index.js - Application and modules wiring

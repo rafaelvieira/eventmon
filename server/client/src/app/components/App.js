@@ -3,7 +3,7 @@ import { BarChart, Bar, LineChart, XAxis, YAxis, Tooltip, CartesianGrid, Legend,
 
 const Header = () => {
 	return (
-		<header class="section">
+		<header className="section">
 			Eventmon - Monitor your events
 		</header>
 	);
@@ -11,7 +11,7 @@ const Header = () => {
 
 const Footer = () => {
 	return (
-		<footer class="section">
+		<footer className="section">
 			Footer
 		</footer>
 	);
@@ -88,6 +88,7 @@ const EventsList = () => {
 
 class App extends Component {
 	componentDidMount() {
+
 		// this.props.fetchEventsBy({
 		// 	days: 30
 		// });
@@ -97,17 +98,26 @@ class App extends Component {
 		return (
 			<div className="container">
 				<Header />
-				<div class="divider"></div>
-				<section class="section row">
-					<div class="col s5">
-						<EventsByCategoryChart />
+				<div className="divider"></div>
+				<section className="section card">
+					<div className="row card-content">
+
+						<div class="card-title">Statistics</div>
+						<div className="col m12 l6 xl5">
+							<EventsByCategoryChart />
+						</div>
+						<div className="col m12 l6 xl7">
+							<CriticalEventsByTimeChart />
+						</div>
 					</div>
-					<div class="col s7">
-						<CriticalEventsByTimeChart />
+					<div className="card-action">
+						<button className="btn-flat blue right">
+							<i className="material-icons">assessment</i>
+						</button>
 					</div>
 				</section>
-				<div class="divider"></div>
-				<section class="section">
+				<div className="divider"></div>
+				<section className="section row">
 					<EventsList />
 				</section>
 				<Footer />
