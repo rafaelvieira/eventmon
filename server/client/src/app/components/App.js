@@ -56,7 +56,7 @@ const CriticalEventsByTimeChart = () => {
 	return (
 		<div className="chart-right">
 			Critical events by time
-			<LineChart width={550} height={300} data={mockData}
+			<LineChart width={450} height={300} data={mockData}
 					margin={{top: 5, right: 30, left: 20, bottom: 5}}>
 				<XAxis dataKey="name"/>
 				<YAxis/>
@@ -99,25 +99,24 @@ class App extends Component {
 			<div className="container">
 				<Header />
 				<div className="divider"></div>
-				<section className="section card">
+				<section className="card">
 					<div className="row card-content">
-
 						<div class="card-title">Statistics</div>
-						<div className="col m12 l6 xl5">
+						<div className="col m12 l12 xl5">
 							<EventsByCategoryChart />
 						</div>
-						<div className="col m12 l6 xl7">
+						<div className="col m12 l12 xl6">
 							<CriticalEventsByTimeChart />
 						</div>
 					</div>
 					<div className="card-action">
-						<button className="btn-flat blue right">
+						<button className="btn-flat blue">
 							<i className="material-icons">assessment</i>
 						</button>
 					</div>
 				</section>
 				<div className="divider"></div>
-				<section className="section row">
+				<section className="card">
 					<EventsList />
 				</section>
 				<Footer />
