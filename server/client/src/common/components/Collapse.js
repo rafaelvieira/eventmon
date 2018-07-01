@@ -6,8 +6,8 @@ const Collapse = ( { isOpened, closedMessage, children } ) => {
     return(
         <ReactCSSTransitionGroup
             transitionName="react-transition"
-            transitionEnterTimeout={600}
-            transitionLeaveTimeout={200}>
+            transitionEnterTimeout={700}
+            transitionLeaveTimeout={10}>
             {
                 isOpened ? 
                     [<div key="collapse_opened" style={{ display: isOpened ? "block" : "none" }}>{ children }</div>] :

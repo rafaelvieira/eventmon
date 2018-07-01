@@ -4,7 +4,7 @@
 
 .react-transition-enter.react-transition-enter-active {
     opacity: 1;
-    transition: opacity 600ms ease-in;
+    transition: opacity 700ms ease-in;
 }
 
 .react-transition-leave {
@@ -13,7 +13,7 @@
 
 .react-transition-leave.react-transition-leave-active {
     opacity: 0.01;
-    transition: opacity 200ms ease-in;
+    transition: opacity 10ms ease-in;
 }
 
 /*.react-transition-enter {
