@@ -2,16 +2,43 @@
     opacity: 0.01;
 }
 
-.react-transition-enter.example-enter-active {
+.react-transition-enter.react-transition-enter-active {
+    opacity: 1;
+    transition: opacity 600ms ease-in;
+}
+
+.react-transition-leave {
+    opacity: 1;
+}
+
+.react-transition-leave.react-transition-leave-active {
+    opacity: 0.01;
+    transition: opacity 200ms ease-in;
+}
+
+/*.react-transition-enter {
+    opacity: 0.01;
+}
+
+.react-transition-enter.react-transition-enter-active {
     opacity: 1;
     transition: opacity 500ms ease-in;
 }
 
-.example-leave {
+.react-transition-leave {
     opacity: 1;
 }
 
-.example-leave.example-leave-active {
+.react-transition-leave.react-transition-leave-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }
+
+.react-transition-appear {
+    opacity: 0.01;
+}
+
+.react-transition-appear.react-transition-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}*/
